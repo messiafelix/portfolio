@@ -216,8 +216,8 @@ body{
     width: 410px;
     height: 410px;
     opacity: 0;
-    animation: zoomIn 1s ease forwards;
-    animation-delay: 2.1s;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2.1s, 3.1s;
 }
 
 .home-img .glowing-circle {
@@ -326,5 +326,17 @@ body{
     100% {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-24px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
