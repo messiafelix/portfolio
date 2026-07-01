@@ -49,6 +49,7 @@ body{
 .home {
     width: 100%;
     height: 100vh;
+    justify-content: space-between;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -56,6 +57,7 @@ body{
 
 .home-content {
     max-width: 500px;
+    margin: -30px;
 }
 
 .home-content h1 {
@@ -126,7 +128,7 @@ body{
     background-position: 100% 0;
 }
 
-.home-sci a {
+.home-int a {
     position: relative;
     display: flex;
     width: 40px;
@@ -142,7 +144,7 @@ body{
     z-index: 1;
 }
 
-.home-sci a::before {
+.home-int a::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -153,11 +155,11 @@ body{
     transition: .5s ease;
 }
 
-.home-sci a:hover::before {
+.home-int a:hover::before {
     filter: blur(10px);
 }
 
-.home-sci a::after {
+.home-int a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -170,6 +172,60 @@ body{
 }
     
 
-.home-sci a:hover::after {
+.home-int a:hover::after {
     transform: scale(0);
+}
+
+.home-img {
+    width: 410px;
+    height: 410px;
+}
+
+.home-img .glowing-circle {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: yellowgreen;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glowing-circle span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f06, #3cf);
+    border-radius: 50%;
+}
+
+.glowing-circle span:nth-child(1){
+    filter: blur(10px);
+}
+
+.home-img .glowing-circle::after {
+    content: '';
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background: #0c1022;
+    border-radius: 50%;
+}
+
+.glowing-circle .image {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.image img {
+    position: absolute;
+    top: -50px;
+    left: 5%;
+    max-width: 350px;
+    object-fit: cover;
 }
