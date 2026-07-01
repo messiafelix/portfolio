@@ -29,6 +29,8 @@ body{
     text-decoration: none;
     font-weight: 600;
     pointer-events: none;
+    opacity: 0;
+    animation: slidetop 1s ease forwards;
 }
 
 .navbar a {
@@ -37,6 +39,10 @@ body{
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
+    opacity: 0;
+    animation: slidetop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    display: inline-block;
 }
 
 .navbar a.active,
@@ -228,4 +234,16 @@ body{
     left: 5%;
     max-width: 350px;
     object-fit: cover;
+}
+
+@keyframes slidetop {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
