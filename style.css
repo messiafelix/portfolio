@@ -162,6 +162,24 @@ body{
     z-index: 1;
 }
 
+.home-int a:nth-child(1) {
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 2.1s;
+}
+
+.home-int a:nth-child(2) {
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 2.1s;
+}
+
+.home-int a:nth-child(3) {
+    opacity: 0;
+    animation: slidetop 1s ease forwards;
+    animation-delay: 2.1s;
+}
+
 .home-int a::before {
     content: '';
     position: absolute;
@@ -281,5 +299,17 @@ body{
     100%{ 
         opacity: 1;
         transform: translateX(0);
+    }
+}
+
+@keyframes slideBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
