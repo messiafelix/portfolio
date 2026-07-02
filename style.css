@@ -52,6 +52,13 @@ body{
     -webkit-background-clip: text;
 }
 
+.menu {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
 .home {
     width: 100%;
     height: 100vh;
