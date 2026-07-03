@@ -41,13 +41,15 @@ body{
     animation: slidetop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
     display: inline-block;
+    transition: .3s;
 }
 
-/*.navbar a.active,*/
 .navbar a:hover {
     background: linear-gradient(45deg, #f06, #3cf);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    font-weight: bold;
+    text-shadow: 0  5px #f06, 0 0 20px #3cf;
 }
 
 #check {
@@ -170,7 +172,6 @@ body{
     justify-content: center;
     align-items: center;
     margin: 20px 0;
-    margin-left: px;
     z-index: 1;
 }
 
