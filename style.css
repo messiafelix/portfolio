@@ -74,7 +74,7 @@ body{
 
 .home-content {
     max-width: 500px;
-    margin: -30px;
+    margin: 0;
 }
 
 .home-content h1 {
@@ -394,21 +394,27 @@ body{
 }
 
 @media (max-width: 770px) {
+    .home-img {
+        width: 280px;
+        height: 280px;
+        margin-left: 0;
+    }
     .home-img .glowing-circle::after {
-        width: 310px;
-        height: 310px;
+        width: 270px;
+        height: 270px;
     }
     .glowing-circle .image {
-        width: 310px;
-        height: 310px;
+        width: 270px;
+        height: 270px;
     }
     .glowing-circle span {
-        width: 320px;
-        height: 320px;
+        width: 290px;
+        height: 290px;
     }
     .image img {
-        left: -1.5%;
-        top: -70px;
+        max-width: 240px;
+        left: 6%;
+        top: -40px;
     }
 }
 
@@ -451,10 +457,23 @@ body{
         font-size: 1.1rem;
         margin: 1.5rem 0;
         text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .3s ease;
+    }
+    #check:checked~.navbar a {
+        transform: translateY(0);
+        opacity: 1;
     }
     .home {
         flex-direction: column-reverse;
+        justify-content: center;
         text-align: center;
+        align-items: center;
+        gap: 20px;
+        padding: 90px 5% 20px;
+        height: auto;
+        
     }
     .home-content h1 {
     font-size: 40px;
@@ -468,4 +487,5 @@ body{
     .btn {
         bottom: 30px;
     }
+
     }
