@@ -294,7 +294,7 @@ body{
     font-family: cursive;
 }
 .about-content {
-    padding: 10%;
+    padding: 5% 10%;
 }
 .about-content h2 {
     opacity: 0;
@@ -328,6 +328,7 @@ body{
     text-align: center;
     width: 600px;
     margin-left: 10rem;
+    margin-bottom: 5rem;
     background: #161616;
     border: 1px solid #3cf;
     border-radius: 20px;
@@ -464,6 +465,17 @@ body{
         left: -1.5%;
         top: -70px;
     }
+    .name {
+        width: 500px;
+        margin-left: 5rem;
+    }
+    .box h3 {
+        font-size: 12px;
+    }
+    .box span {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
 }
 
 @media (max-width: 770px) {
@@ -488,6 +500,17 @@ body{
         max-width: 240px;
         left: 6%;
         top: -40px;
+    }
+    .name {
+        width: 500px;
+        margin-left: 5rem;
+    }
+    .box h3 {
+        font-size: 12px;
+    }
+    .box span {
+        font-size: 11px;
+        letter-spacing: 1px;
     }
 }
 
@@ -559,6 +582,16 @@ body{
     }
     .btn {
         bottom: 30px;
+    }
+    .name {
+        width: 400px;
+        margin-left: 3rem;
+    }
+    .box h3 {
+        font-size: 10px;
+    }
+    .box span {
+        font-size: 9px;
     }
 
     }
