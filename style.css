@@ -467,10 +467,14 @@ body{
     }
     .name {
         width: 500px;
-        margin-left: 5rem;
+        margin-left: 8rem;
+    }
+    .box {
+       padding: .5rem;
     }
     .box h3 {
         font-size: 12px;
+        margin-top: 0;
     }
     .box span {
         font-size: 11px;
@@ -505,16 +509,13 @@ body{
         width: 500px;
         margin-left: 5rem;
     }
-    .box h3 {
-        font-size: 12px;
-    }
     .box span {
         font-size: 11px;
         letter-spacing: 1px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .icons {
         display: inline-flex;
     }
@@ -584,7 +585,19 @@ body{
         bottom: 30px;
     }
     .name {
-        width: 400px;
+        width: 300px;
+        margin-left: 3rem;
+    }
+    .box h3 {
+        font-size: 8px;
+    }
+    .box span {
+        font-size: 8px;
+    }
+    /*
+    @media (max-width: 600px) {
+    .name {
+        width: 200px;
         margin-left: 3rem;
     }
     .box h3 {
@@ -592,6 +605,7 @@ body{
     }
     .box span {
         font-size: 9px;
+    }
     }
 
     }
