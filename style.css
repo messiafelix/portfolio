@@ -794,10 +794,27 @@ body{
        font-size: .5rem;
     }
     .stats {
+        gap: 2px;
+    }
+    .stats-box {
+        gap: 6px;
+    }
+
+}
+@media (max-width: 480px) {
+    .stats-box i {
+        font-size: 10px;
+    }
+    .stats-box h2 {
+       font-size: .3rem;
+    }
+    .stats-box p {
+       font-size: .3rem;
+    }
+    .stats {
         gap: 0px;
     }
     .stats-box {
         gap: 0px;
     }
-
 }
