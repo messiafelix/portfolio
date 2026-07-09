@@ -491,7 +491,7 @@ body{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
-    width: 80rem;
+    width: 100%;
     /*margin-top: 40px;
     margin-left: 10rem;*/
     background: #111827;
@@ -684,11 +684,14 @@ body{
         padding: 0.5rem;
 
     }
-    .stats {
-        grid-template-columns: repeat(2,1fr);
+    .stats-box i {
+        font-size: 30px;
     }
-    .stats-box {
-        border-right: none;
+    .stats-box h2 {
+       font-size: 1rem;
+    }
+    .stats-box p {
+       font-size: .5rem;
     }
 }
 
@@ -750,9 +753,9 @@ body{
         
     }
     .home-content h1 {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 1;
+       font-size: 40px;
+       font-weight: 500;
+       line-height: 1;
     }
     .home-int {
         display: flex;
@@ -772,17 +775,29 @@ body{
         font-size: 8px;
     }
     .box i {
-    font-size: 1rem;
+        font-size: 1rem;
     }
     .btn1, .btn2 {
-    width: 130px;
-    height: 30px;
-    border-radius: 10px;
-    font-size: 12PX;
-    font-weight: 600;
+        width: 130px;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 12PX;
+        font-weight: 600;
+    }
+    .stats-box i {
+        font-size: 20px;
+    }
+    .stats-box h2 {
+       font-size: .7rem;
+    }
+    .stats-box p {
+       font-size: .5rem;
     }
     .stats {
-        grid-template-columns: repeat(1,1fr);
+        gap: 2px;
+    }
+    .stats-box {
+        gap: 6px;
     }
 
 }
