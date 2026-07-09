@@ -803,18 +803,18 @@ body{
 }
 @media (max-width: 480px) {
     .stats-box i {
-        font-size: 10px;
+        font-size: 15px;
     }
     .stats-box h2 {
-       font-size: .3rem;
+       font-size: .4rem;
     }
     .stats-box p {
-       font-size: .3rem;
+       font-size: .4rem;
     }
     .stats {
-        gap: 0px;
+        gap: 2px;
     }
     .stats-box {
-        gap: 0px;
+        gap: 2px;
     }
 }
