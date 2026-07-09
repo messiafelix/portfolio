@@ -51,7 +51,7 @@ body{
 /* logo messia */
 .logo {
     font-size: 2rem;
-    color: #3cf;
+    color: #ed9c4d;
     text-decoration: none;
     font-weight: 700;
     opacity: 0;
@@ -72,11 +72,10 @@ body{
 }
 
 .navbar a:hover {
-    background: linear-gradient(45deg, #3cf, #3cf);
+    background: linear-gradient(45deg, #f1cd90, #ed9c4d, #ed9c4d);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight: bold;
-    color: #3cf;
 }
 /* checkbox */
 #check {
@@ -87,7 +86,7 @@ body{
     position: absolute;
     right: 5%;
     font-size: 2.8rem;
-    color: #fff;
+    color: #ed9c4d;
     cursor: pointer;
     display: none;
 }
@@ -158,7 +157,7 @@ body{
     top: 0;
     left: 0;
     inset: 0;
-    background: linear-gradient(45deg, #3cf, #3cf, #3cf);
+    background: linear-gradient(45deg, #f1cd90, #ed9c4d, #ed9c4d);
     background-position: 0 0;
     z-index: -1;
     border-radius: 40px;
@@ -176,7 +175,7 @@ body{
     top: 0;
     left: 0;
     inset: 0;
-    background: linear-gradient(45deg, #3cf, #3cf, #3cf);
+    background: linear-gradient(45deg, #f1cd90, #ed9c4d, #ed9c4d);
     background-position: 0 0;
     z-index: -1;
     border-radius: 40px;
@@ -193,7 +192,7 @@ body{
     display: flex;
     width: 40px;
     height: 40px;
-    background: #3cf;
+    background: linear-gradient(45deg, #f1cd90, #ed9c4d, #ed9c4d);
     border-radius: 50px;
     font-size: 20px;
     color: #fff;
@@ -227,7 +226,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #3cf;
+    background: linear-gradient(45deg, #f1cd90, #ed9c4d, #ed9c4d);
     border-radius: 50%;
     z-index: -1;
     transition: .5s ease;
@@ -276,7 +275,7 @@ body{
     position: absolute;
     width: 390px;
     height: 390px;
-    background: #3cf;
+    background: linear-gradient(45deg, #f1cd90, #ed9c4d, #ed9c4d);
     border-radius: 50%;
     animation: circleRotate 5s linear infinite;
 }
@@ -325,12 +324,7 @@ body{
     animation-delay: 2.1s;
 }
 .about h5 span {
-    color: #3cf;
-}
-.about-content {
-    /*padding: 5% 10%;
-    max-width: 900px;
-    margin: 0 auto;*/
+    color: #ed9c4d;
 }
 .about-content h2 {
     opacity: 0;
@@ -338,37 +332,38 @@ body{
     animation-delay: .7s;
 }
 .about-content h2 span {
-    color: #3cf;
+    color: #f1cd90;
 }
 .about-content h3 {
-    color: #3cf;
     opacity: 0;
     animation: slideRight .9s ease forwards;
     animation-delay: 1s;
 }
+.about-content h3 span {
+    color: #f1cd90;
+}
 .about-content p {
+    color: #bfbfbf;
     opacity: 0;
     animation: slideRight .7s ease forwards;
     animation-delay: 1.3s;
 }
 .about-content p .out {
-    color: #3cf;
+    color: #ed9c4d;
     font-size: 1.5rem;
     font-weight: bold;
 }
 .about-content p .eni {
     font-weight: bold;
-    color: #3cf;
+    color: #f1cd90;
 }
 .name {
     text-align: center;
     width: 100%;
     max-width: 700px;
-   /* margin: 40px auto;
-    /*margin-left: 10rem;*/
     margin-bottom: 3rem;
     background: #161616;
-    border: 1px solid #3cf;
+    border: 1px solid #ed9c4d;
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -382,7 +377,7 @@ body{
 }
 .box i {
     font-size: 1.5rem;
-    color: #3cf;
+    color: #ed9c4d;
 }
 .box span {
     color: #7a7a7a;
@@ -397,21 +392,16 @@ body{
 }
 .buttom {
     display: flex;
-    /*justify-content: center;*/
     gap: 20px;
     flex-wrap: wrap;
     margin: 40px 0;
     opacity: 0;
     animation: slidetop 1s ease forwards;
     animation-delay: 2.1s;
-    /*align-items: center;
-    padding: 2.5rem;
-    margin-left: 5rem;*/
 }
 .buttom a {
     margin: 0;
     gap: 10px;
-    /*margin-left: 2.5rem;*/
     text-decoration: none;
     color: #fff;
 
@@ -419,7 +409,7 @@ body{
 .btn1 {
     position: relative;
     display: inline-flex;
-    background: #3cf;
+    background: linear-gradient(45deg, #f1cd90, #ed9c4d, #ed9c4d);
     width: 180px;
     height: 48px;
     border-radius: 10px;
@@ -434,7 +424,7 @@ body{
     position: absolute;
     width: 95%;
     height: 90%;
-    background: #3cf;
+    background: linear-gradient(45deg, #f1cd90, #ed9c4d, #ed9c4d);
     border-radius: 50%;
     z-index: -1;
     transition: .5s ease;
@@ -459,7 +449,7 @@ body{
 .btn2 {
     position: relative;
     display: inline-flex;
-    background: #3cf;
+    background: linear-gradient(45deg, #f1cd90, #ed9c4d, #ed9c4d);
     width: 180px;
     height: 48px;
     border-radius: 10px;
@@ -474,7 +464,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #3cf;
+    background: linear-gradient(45deg, #f1cd90, #ed9c4d, #ed9c4d);
     border-radius: 50%;
     z-index: -1;
     transition: .5s ease;
@@ -501,11 +491,9 @@ body{
     grid-template-columns: repeat(4,1fr);
     gap: 20px;
     width: 100%;
-    /*margin-top: 40px;
-    margin-left: 10rem;*/
     margin-bottom: 3rem;
     background: #111827;
-    border: 1px solid #3cf;
+    border: 1px solid #ed9c4d;
     border-radius: 15px;
     opacity: 0;
     animation: slidetop 1s ease forwards;
@@ -524,7 +512,7 @@ body{
 }
 .stats-box i {
     font-size: 40px;
-    color: #3cf;
+    color: #ed9c4d;
 }
 .stats-box h2 {
     color: #fff;
