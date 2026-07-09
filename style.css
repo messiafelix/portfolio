@@ -812,7 +812,7 @@ body{
        font-size: .4rem;
     }
     .stats {
-        gap: 2px;
+        gap: 0px;
     }
     .stats-box {
         gap: 2px;
