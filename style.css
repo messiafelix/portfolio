@@ -794,10 +794,10 @@ body{
        font-size: .5rem;
     }
     .stats {
-        gap: 2px;
+        gap: 0px;
     }
     .stats-box {
-        gap: 6px;
+        gap: 0px;
     }
 
 }
