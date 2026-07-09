@@ -395,6 +395,9 @@ body{
     gap: 20px;
     flex-wrap: wrap;
     margin: 40px 0;
+    opacity: 0;
+    animation: slidetop 1s ease forwards;
+    animation-delay: 2.1s;
     /*align-items: center;
     padding: 2.5rem;
     margin-left: 5rem;*/
@@ -497,6 +500,9 @@ body{
     background: #111827;
     border: 1px solid #3cf;
     border-radius: 15px;
+    opacity: 0;
+    animation: slidetop 1s ease forwards;
+    animation-delay: 2.1s;
 }
 .stats-box {
     display: flex;
