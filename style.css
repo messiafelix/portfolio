@@ -313,8 +313,8 @@ body{
 .about {
     width: 100%;
     height: 100vh;
-    padding: 200px 8% 50px;
-    margin: 20px 0;
+    padding: 120px 8% 50px;
+    margin: 0;
 }
 .about h5 {
     letter-spacing: 8px;
@@ -601,7 +601,7 @@ body{
 }
 .services {
     position: relative;
-    width: 90%;
+    width: 100%;
     background: #111827;
     border: 1px solid #ed9c4d;
     border-radius: 15px;
@@ -616,7 +616,6 @@ body{
     color: #ed9c4d
 }
 .services-card{
-    background: ;
     width: 100%;
     height: 60%;
     display: flex;
@@ -652,6 +651,162 @@ body{
 .services-card p {
     text-align: center;
     font-size: .9rem;
+}
+/* PROJECTS */
+.Projects {
+    width: 100%;
+    height: 100vh;
+    padding: 400px 8% 50px;
+    margin: 0;
+}
+.projects-box {
+    width: 100%;
+    background: #111827;
+    border: 1px solid #ed9c4d;
+    border-radius: 15px;
+    padding: 20px;
+}
+.projects-box h2 {
+    letter-spacing: .3rem;
+    font-style: italic;
+}
+.projects-box span {
+    color: #db7d20;
+}
+.projects-card {
+    display: flex;
+    gap: 30px;
+    padding: 15px 0;
+    height: 100%;
+    width: 100%;
+}
+.project {
+    background: #0c1022;
+    width: 30%;
+    padding: 1rem;
+    height: 100%;
+    border: 1px solid #f1cd90;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    transition: .3s;
+}
+.project:hover {
+    box-shadow:0 0 20px #f1cd90, 0 0 40px #ed9c4d;
+    cursor: pointer;
+}
+.project img {
+    width: 100%;
+    height: 100%;
+}
+.project h3 {
+     background: linear-gradient(45deg, #ed9c4d, #f1cd90, #ed9c4d);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.project p {
+    color: #bfbfbf;
+}
+.project i {
+    font-size: 2rem;
+    color: #f1cd90;
+}
+.projects-btn {
+    display: flex;
+    margin-top: 15px;
+    gap: 10px;
+}
+.projects-btn a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+.view {
+    background: #ed9c4d;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.github {
+    width: 100%;
+    border: 1px solid #ed9c4d;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.education-card {
+    width: 100%;
+    background: #2d2d2d;
+    border: 1px solid #ed9c4d;
+    border-radius: 20px;
+    padding: 30px;
+    transition: .4s;
+}
+.title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+.title i {
+    color: #ed9c4d;
+    font-size: 28px;
+}
+.timeline {
+    position: relative;
+    margin-left: 15px;
+    padding-left: 35px;
+}
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    width: 2px;
+    height: 100%;
+    background: #ed9c4d;
+}
+.timeline-item {
+    position: relative;
+}
+.timeline-dot {
+    position: absolute;
+    left: -35px;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #2d2d2d;
+    border: 2px solid #ed9c4d;
+    box-shadow: 0 0 15px;
+}
+.timeline-date {
+    color: #f1cd90;
+    font-size: 15px;
+    font-weight: 600;
+}
+.timeline-content h3 {
+    color: #fff;
+    font-size: 22px;
+    margin: 12px 0 8px;
+}
+.timeline-content h4 {
+    color: #d5d5d5;
+    font-size: 17px;
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+.timeline-content p {
+    color: #9ca3af;
+    line-height: 1.8;
+    font-size: 15px;
 }
 
 /* KEYFRAMES */
@@ -941,6 +1096,9 @@ body{
     }
     .btn {
         bottom: 30px;
+    }
+    .about {
+        min-height: auto;
     }
     .name {
         width: 280px;
