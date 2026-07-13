@@ -528,7 +528,7 @@ body{
     gap: 10px;
     width: 100%;
     height: 100vh;
-    padding: 300px 8% 50px;
+    padding: 200px 8% 50px;
     margin: 20px 0;
 }
 .skills-box {
@@ -600,13 +600,13 @@ body{
     background: #f1cd90;
 }
 .services {
-    position: relative;
+    /*position: relative;*/
     width: 100%;
     background: #111827;
     border: 1px solid #ed9c4d;
     border-radius: 15px;
     padding: 20px;
-    z-index: 1;
+    /*z-index: 1;*/
 }
 .services h2 {
     letter-spacing: 5px;
@@ -656,7 +656,7 @@ body{
 .Projects {
     width: 100%;
     height: 100vh;
-    padding: 400px 8% 50px;
+    padding: 200px 8% 50px;
     margin: 0;
 }
 .projects-box {
@@ -676,13 +676,13 @@ body{
 .projects-card {
     display: flex;
     gap: 30px;
-    padding: 15px 0;
-    height: 100%;
+    padding: 10px 0;
+    height: 90%;
     width: 100%;
 }
 .project {
     background: #0c1022;
-    width: 30%;
+    width: 100%;
     padding: 1rem;
     height: 100%;
     border: 1px solid #f1cd90;
@@ -699,10 +699,10 @@ body{
 }
 .project img {
     width: 100%;
-    height: 100%;
+    height: 50%;
 }
 .project h3 {
-     background: linear-gradient(45deg, #ed9c4d, #f1cd90, #ed9c4d);
+    background: linear-gradient(45deg, #ed9c4d, #f1cd90, #ed9c4d);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -728,7 +728,7 @@ body{
     width: 100%;
     border-radius: 10px;
     padding: 10px;
-    font-size: 15px;
+    font-size: .8rem;
     font-weight: bold;
 }
 .github {
@@ -736,15 +736,17 @@ body{
     border: 1px solid #ed9c4d;
     border-radius: 10px;
     padding: 10px;
-    font-size: 15px;
+    font-size: .8rem;
     font-weight: bold;
 }
 .education-card {
     width: 100%;
+    height: 70%;
     background: #2d2d2d;
     border: 1px solid #ed9c4d;
     border-radius: 20px;
     padding: 30px;
+    margin-top: 1rem;
     transition: .4s;
 }
 .title {
@@ -760,6 +762,7 @@ body{
     font-size: 28px;
 }
 .timeline {
+    display: flex;
     position: relative;
     margin-left: 15px;
     padding-left: 35px;
@@ -807,6 +810,19 @@ body{
     color: #9ca3af;
     line-height: 1.8;
     font-size: 15px;
+}
+.timeline img {
+    margin-left: 20rem;
+    width: 20%;
+    transition: 1s;
+}
+.timeline img:hover {
+    box-shadow: 0 0 20px #ed9c4d;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.education-card:hover {
+    box-shadow: 0 0 20px #db7d20;
 }
 
 /* KEYFRAMES */
@@ -957,6 +973,24 @@ body{
     .services-card {
         height: 60%;
     }
+    .title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .timeline-content h3 {
+        font-size: 1.2rem;
+    }
+    .timeline-content h4 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .timeline-content p {
+       line-height: 1.5;
+       font-size: .9rem;
+    }
+    .timeline img {
+        width: 40%;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -1006,7 +1040,7 @@ body{
         display: grid;
     }
     .skills-box {
-        width: 89%;
+        width: 100%;
     }
     .skills-box h2 {
         font-size: 1rem;
@@ -1025,6 +1059,12 @@ body{
     }
     .services-card {
         height: 80%;
+    }
+    .timeline img {
+        margin-left: 0rem;
+    }
+    .education-card {
+       height: 60%;
     }
 }
 
@@ -1135,13 +1175,44 @@ body{
     .stats-box {
         gap: 0rem;
     }
+    .Projects {
+       margin-top: 15rem;
+    }
+    .projects-card {
+        display: grid;
+    }
+    .project h3 {
+        font-size: 1.2rem;
+    }
+    .project p {
+       font-size: .8rem;
+    }
+    .project i {
+       font-size: 1.5rem;
+    }
     .skills {
         display: grid;
     }
     .services-card {
         display: grid;
     }
-
+    .title {
+        font-size: 1.2rem;
+    }
+    .timeline-content h3 {
+        font-size: 1rem;
+    }
+    .timeline-content h4 {
+        font-size: .8rem;
+        font-weight: 500;
+    }
+    .timeline-content p {
+       line-height: 1.5;
+       font-size: .7rem;
+    }
+    .timeline img {
+        width: 50%;
+    }
 }
 @media (max-width: 480px) {
     .stats-box i {
