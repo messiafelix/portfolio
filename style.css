@@ -878,6 +878,7 @@ body{
 .contact-box #right {
     color: #bfbfbf;
 }
+/* INPUT */
 .input form {
     width: 100%;
     margin-top: 4.5rem;
@@ -1168,6 +1169,9 @@ body{
     .education-card {
        height: 60%;
     }
+    .contact {
+        display: block;
+    }
 }
 
 @media (max-width: 700px) {
@@ -1314,6 +1318,18 @@ body{
     }
     .timeline img {
         width: 50%;
+    }
+    .contact-box {
+        padding: .1rem;
+    }
+    .call small {
+        font-size: 12px;
+    }
+    .call h4 {
+        font-size: 1rem;
+    }
+    .contact-box #logo {
+        font-size: 1.4rem;
     }
 }
 @media (max-width: 480px) {
