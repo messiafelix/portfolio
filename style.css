@@ -1196,6 +1196,9 @@ body{
     .contact {
         display: block;
     }
+    .footer p {
+        font-size: .8rem;
+    }
 }
 
 @media (max-width: 700px) {
@@ -1357,6 +1360,15 @@ body{
     }
     .input-box  {
         display: block;
+    }
+    .name-foot {
+       font-size: .7rem;
+    }
+    .footer p {
+       font-size: .6rem;
+    }
+    .battery {
+       font-size: .7rem;
     }
 }
 @media (max-width: 480px) {
