@@ -935,6 +935,23 @@ body{
     transform: translateY(-3px);
     box-shadow: 0 0 20px #fff;
 }
+/*FOOTER */
+.footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #111827;
+}
+.name-foot {
+    color: #ed9c4d;
+}
+.footer p {
+    color: #bfbfbf;
+}
+.battery i {
+    color: #ed9c4d;
+}
 /* KEYFRAMES */
 @keyframes slidetop {
     0%{
