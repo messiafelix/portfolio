@@ -858,6 +858,10 @@ body{
     padding: 10px;
     margin-bottom: 20px;
     cursor: pointer;
+    opacity: 0;
+    animation: slideRight .5s ease forwards;
+    animation-delay: calc(.3s * var(--i));
+    transition: .3s;
 }
 .call {
     flex: 1;
@@ -901,8 +905,11 @@ body{
     color: #fff;
     font-size: 16px;
     outline: none;
-    transition: .3s;
     margin-bottom: 20px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    transition: .3s;
 } 
 .input input:focus,
 .input textarea:focus {
@@ -1331,6 +1338,9 @@ body{
     .contact-box #logo {
         font-size: 1.4rem;
     }
+    .input-box  {
+        display: block;
+    }
 }
 @media (max-width: 480px) {
     .stats-box i {
@@ -1347,5 +1357,21 @@ body{
     }
     .stats-box {
         gap: .3rem;
+    }
+    .title {
+        font-size: 1rem;
+    }
+    .timeline-content h3 {
+        font-size: .8rem;
+    }
+    .timeline-content h4 {
+        font-size: .7rem;
+    }
+    .contact-me h2 {
+       font-size: 1rem;
+       font-weight: 700;
+    }
+    .contact-me p {
+       line-height: 1.5;
     }
 }
