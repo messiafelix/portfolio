@@ -119,10 +119,7 @@ body{
     font-size: 32px;
     font-weight: 700;
     color: #f1cd90;
-    /*overflow: hidden;
-    border-right: 3px solid #f1cd90;
-    white-space: nowrap;
-    animation: type 6s steps(13) infinite, blink .8s step-end infinite;*/
+    overflow: hidden;
     opacity: 0;
     animation: slideRight .5s ease forwards;
     animation-delay: 1s;
@@ -280,7 +277,7 @@ body{
     position: absolute;
     width: 390px;
     height: 390px;
-    background: linear-gradient(45deg, #f1cd90, #ed9c4d, #ed9c4d);
+    background: linear-gradient(45deg, #fff, #ed9c4d, #ed9c4d);
     border-radius: 50%;
     animation: circleRotate 5s linear infinite;
 }
@@ -605,7 +602,6 @@ body{
     background: #f1cd90;
 }
 .services {
-    /*position: relative;*/
     width: 100%;
     background: #111827;
     border: 1px solid #ed9c4d;
@@ -940,6 +936,56 @@ body{
     transform: translateY(-3px);
     box-shadow: 0 0 20px #fff;
 }
+
+.contact-int a {
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(45deg, #f1cd90, #ed9c4d, #ed9c4d);
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    z-index: 1;
+    opacity: 0;
+    animation: slidetop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    transition: .3s;
+}
+.contact-int a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #f1cd90, #ed9c4d, #ed9c4d);
+    border-radius: 50%;
+    z-index: -1;
+    transition: .5s ease;
+}
+
+.contact-int a:hover::before {
+    filter: blur(10px);
+}
+
+.contact-int a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0c1022;
+    transform: scale(.88);
+    border-radius: 50%;
+    z-index: -1;
+    transition: .5s ease;
+}
+
+.contact-int a:hover::after {
+    transform: scale(0);
+}
 /*FOOTER */
 .footer {
     width: 100%;
@@ -968,12 +1014,6 @@ body{
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-@keyframes type {
-    0% { width: 0; }
-    50% { width: 13ch;}
-    100% { width: 0; }
 }
 
 @keyframes slideLeft{
@@ -1132,6 +1172,24 @@ body{
 }
 
 @media (max-width: 1000px) {
+    .home {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 20px;
+        padding: 90px 5% 20px;
+        height: auto;
+        
+    }
+    .home-int {
+        display: flex;
+        gap: 20px;
+        margin-top: -40px;
+    }
+    .btn {
+        bottom: 30px;
+    }
     .home-content h1 {
         font-size: 2.2rem;
     }
@@ -1213,12 +1271,17 @@ body{
     .contact {
         display: block;
     }
+    .contact-int {
+        display: flex;
+        gap: 20px;
+    }
     .footer p {
         font-size: .8rem;
     }
     .projects-box h2 {
         font-size: .9rem;
     }
+
 }
 
 @media (max-width: 700px) {
@@ -1268,27 +1331,32 @@ body{
         transform: translateY(0);
         opacity: 1;
     }
-    .home {
-        flex-direction: column-reverse;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        gap: 20px;
-        padding: 90px 5% 20px;
-        height: auto;
-        
-    }
     .home-content h1 {
        font-size: 40px;
        font-weight: 500;
        line-height: 1;
     }
-    .home-int {
-        display: flex;
-        gap: 20px;
+    .home-img {
+        width: 200px;
+        height: 200px;
+        margin-left: 0;
     }
-    .btn {
-        bottom: 30px;
+    .home-img .glowing-circle::after {
+        width: 200px;
+        height: 200px;
+    }
+    .glowing-circle .image {
+        width: 200px;
+        height: 200px;
+    }
+    .glowing-circle span {
+        width: 220px;
+        height: 220px;
+    }
+    .image img {
+        max-width: 200px;
+        left: 1%;
+        top: -35px;
     }
     .about {
         min-height: auto;
