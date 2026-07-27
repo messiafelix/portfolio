@@ -137,9 +137,6 @@ body{
     overflow: hidden;
     white-space: nowrap;
     animation: type 6s steps(13) infinite;
-    /*opacity: 0;
-    animation: slideRight .5s ease forwards;
-    animation-delay: 1s;*/
 }
 /* home-conte:p */
 .home-content p {
@@ -1228,7 +1225,7 @@ body{
         font-size: 2.2rem;
     }
     .home-content h3 {
-        margin-left: 8rem;
+        margin-left: 9rem;
         font-size: 1.4rem;
     }
     .home-img {
@@ -1371,6 +1368,9 @@ body{
        font-weight: 500;
        line-height: 1;
     }
+    .home-content h3 {
+        margin-left: 7rem;
+    }
     .home-img {
         width: 200px;
         height: 200px;
@@ -1495,6 +1495,9 @@ body{
     }
 }
 @media (max-width: 480px) {
+    .home-content h3 {
+        margin-left: 5rem;
+    }
     .stats-box i {
         font-size: 12px;
     }
