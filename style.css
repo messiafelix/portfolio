@@ -1516,10 +1516,10 @@ body{
     }
     .stats {
         justify-content: center;
-        gap: 0rem;
+        gap: 0px;
     }
     .stats-box {
-        gap: .3rem;
+        gap: 0rem;
     }
     .title {
         font-size: 1rem;
