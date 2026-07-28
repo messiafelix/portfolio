@@ -55,8 +55,6 @@ body{
     font-family: cursive;
     text-decoration: none;
     font-weight: 700;
-    opacity: 0;
-    animation: slidetop 1s ease forwards;
 }
 .M{
     color: #ed9c4d;
@@ -1040,7 +1038,7 @@ body{
 @keyframes slidetop {
     0%{
         opacity: 0;
-        transform: translateY(100px);
+        transform: translateY(15px);
     }
 
     100%{
@@ -1362,9 +1360,14 @@ body{
         font-size: 1.1rem;
         margin: 1.5rem 0;
         text-align: center;
-        transform: translateY(-50px);
-        opacity: 0;
-        transition: .3s ease;
+        /*transform: translateY(-50px);*/
+        opacity: 1;
+        animation: none;
+        /*transition: .3s ease;*/
+    }
+    .logo {
+        opacity: 1;
+        animation: none;
     }
     #check:checked~.navbar a {
         transform: translateY(0);
