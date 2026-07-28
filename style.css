@@ -334,10 +334,6 @@ body{
     font-style: italic;
     opacity: 0;
     animation: slideRight 1s ease forwards;
-    /*animation-delay: 2.1s;*/
-    animation-timeline: scroll();
-    animation-range-start: cover 50%;
-    animation-range-end: contain 30%;
 }
 .about h5 span {
     color: #ed9c4d;
