@@ -82,8 +82,8 @@ body{
 
 .navbar a:hover {
     background: linear-gradient(45deg, #f1cd90, #ed9c4d, #ed9c4d);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
 }
 /* checkbox */
 #check {
@@ -118,13 +118,12 @@ body{
     font-weight: 700;
     line-height: 1.2;
     font-style: italic;
-    background: linear-gradient(45deg, #ed9c4d, #f1d6a8, #ed9c4d);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
     font-family: 'Courier New', Courier, monospace;
-    opacity: 0;
-    animation: slideLeft .5s ease forwards;
-    animation-delay: .7s;
+    background: linear-gradient(45deg, #efc8c8, #fff, #ed9c4d, #dcaf63);
+    background-clip: text;
+    color: transparent;
+    background-size: 200% auto;
+    animation: gradientAnimation 3s linear infinite;
 }
 /* home-conte:h3 */
 .home-content h3 {
@@ -132,8 +131,8 @@ body{
     font-weight: 700;
     font-family: 'Courier New', Courier, monospace;
     background: linear-gradient(90deg, #58584d, #f1f1ef, #cc9e70);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
     overflow: hidden;
     white-space: nowrap;
     animation: type 6s steps(13) infinite;
@@ -338,6 +337,9 @@ body{
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 2.1s;
+    animation-timeline: view();
+    animation-range-start: cover 50%;
+    animation-range-end: contain 30%;
 }
 .about h5 span {
     color: #ed9c4d;
@@ -633,7 +635,6 @@ body{
     border: 1px solid #ed9c4d;
     border-radius: 15px;
     padding: 20px;
-    /*z-index: 1;*/
 }
 .services h2 {
     letter-spacing: 5px;
@@ -730,8 +731,8 @@ body{
 }
 .project h3 {
     background: linear-gradient(45deg, #ed9c4d, #f1cd90, #ed9c4d);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
 }
 .project p {
     color: #bfbfbf;
@@ -1030,6 +1031,10 @@ body{
     color: #ed9c4d;
 }
 /* KEYFRAMES */
+@keyframes gradientAnimation {
+    0% {background-position: 200% 50%;}
+    100% {background-position: 0% 50%;}
+}
 @keyframes slidetop {
     0%{
         opacity: 0;
