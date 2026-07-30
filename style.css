@@ -1546,7 +1546,13 @@ body{
        font-size: .7rem;
     }
     .footer p {
-       font-size: .6rem;
+       font-size: .7rem;
+    }
+
+    .footer-int a {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
     }
     .battery {
        font-size: .7rem;
